@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proj. Baseline</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="resources/css/styles.css">
+</head>
+<body>
+
+<!-- ========== NAV ========== -->
+<nav class="navbar" id="navbar">
+  <div class="navbar-inner">
+    <div class="navbar-logo">[Name]</div>
+    <ul class="navbar-links">
+      <li><a href="#why">Why?</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <button class="btn-primary navbar-cta scroll-to-pricing">Claim Your Spot</button>
+    <button class="navbar-hamburger" id="navHamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ========== MOBILE NAV DRAWER ========== -->
+<div class="nav-drawer" id="navDrawer">
+  <button class="nav-drawer-close" id="navDrawerClose" aria-label="Close menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+  </button>
+  <ul class="nav-drawer-links">
+    <li><a href="#why" class="nav-drawer-link">Why?</a></li>
+    <li><a href="#how-it-works" class="nav-drawer-link">How It Works</a></li>
+    <li><a href="#pricing" class="nav-drawer-link">Pricing</a></li>
+    <li><a href="#faq" class="nav-drawer-link">FAQ</a></li>
+  </ul>
+</div>
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="top">
+  <div class="hero-content">
+    <h1>Your goals don't need a better plan.<br>They need a witness.</h1>
+    <p>Not a course. Not a challenge. A group who actually shows up, and expects you to.</p>
+    <div class="hero-buttons">
+      <button class="btn-primary scroll-to-pricing">Claim Your Spot</button>
+      <button class="btn-secondary">Learn More</button>
+    </div>
+  </div>
+</section>
+
+<!-- ========== THIS IS FOR YOU IF ========== -->
+<section class="for-you">
+  <div class="for-you-left">
+    <h2>[PROJECT NAME] is for you if...</h2>
+    <button class="btn-primary scroll-to-pricing">Claim Your Spot</button>
+  </div>
+  <div class="for-you-right">
+  <div class="for-you-item">
+    <div class="for-you-icon-col">
+      <div class="for-you-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 8l-9-5-9 5m18 0l-9 5m9-5v8l-9 5m0-8l-9-5m9 5v8m-9-13v8l9 5"/></svg>
+      </div>
+      <div class="for-you-line"></div>
+    </div>
+    <div class="for-you-text">
+      <h3>You've started the same goal three times this year</h3>
+    </div>
+  </div>
+
+  <div class="for-you-item">
+    <div class="for-you-icon-col">
+      <div class="for-you-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 8l-9-5-9 5m18 0l-9 5m9-5v8l-9 5m0-8l-9-5m9 5v8m-9-13v8l9 5"/></svg>
+      </div>
+      <div class="for-you-line"></div>
+    </div>
+    <div class="for-you-text">
+      <h3>You do well for two weeks then vanish</h3>
+    </div>
+  </div>
+
+  <div class="for-you-item">
+    <div class="for-you-icon-col">
+      <div class="for-you-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 8l-9-5-9 5m18 0l-9 5m9-5v8l-9 5m0-8l-9-5m9 5v8m-9-13v8l9 5"/></svg>
+      </div>
+      <div class="for-you-line"></div>
+    </div>
+    <div class="for-you-text">
+      <h3>You work better when someone's watching</h3>
+    </div>
+  </div>
+
+  <div class="for-you-item">
+    <div class="for-you-icon-col">
+      <div class="for-you-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 8l-9-5-9 5m18 0l-9 5m9-5v8l-9 5m0-8l-9-5m9 5v8m-9-13v8l9 5"/></svg>
+      </div>
+      <div class="for-you-line"></div>
+    </div>
+    <div class="for-you-text">
+      <h3>You're tired of being accountable to no one</h3>
+    </div>
+  </div>
+
+  <div class="for-you-item">
+    <div class="for-you-icon-col">
+      <div class="for-you-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 8l-9-5-9 5m18 0l-9 5m9-5v8l-9 5m0-8l-9-5m9 5v8m-9-13v8l9 5"/></svg>
+      </div>
+    </div>
+    <div class="for-you-text">
+      <h3>You've read the books, bought the program, and still aren't consistent</h3>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- ========== LONG PAS ========== -->
+<section class="pas" id="why">
+  <h2>One bad day shouldn't blow up everything.</h2>
+  <p class="pas-lead">But it does.</p>
+  <div class="pas-body-wrap">
+    <div class="pas-body">
+      <p>It always starts the same way. One bad day. So you make yourself feel better. You cheat on your diet, you don't work on the project. You give yourself a break. You even tell yourself skipping the workout is a good thing. "I'll feel more rested tomorrow."</p>
+      <p>Then you sleep in, and if today is already ruined, why not enjoy it? Get a burger, watch more TV, go to bed late. Next thing you know the whole 'New Me' plan is shot.</p>
+      <p>Then the shame sets in. You're skipping the gym regularly, eating worse, and sliding straight back into every bad habit you were trying to break.</p>
+      <p>Then comes the weeks of staying there. Is it fun to eat processed foods and do what you want? Fuck yeah. It tastes better, you get to relax.</p>
+      <p>But are you really? You feel bloated, hate how you look, and remember why you wanted to change.</p>
+      <p>There's the spark. You write a new plan. You feel the sun hit your new body as you lay on the beach once all this hard work pays off. You can hear your co-workers complimenting you. It's genuinely exciting.</p>
+      <p>So you take the motivation and make the meal plan, build the workout program, buy an alarm clock and start charging your phone outside the bedroom. You even delete Instagram.</p>
+    </div>
+    <div class="pas-fade"></div>
+  </div>
+  <div class="pas-body-rest">
+    <div class="pas-body">
+      <p>You account for everything that derailed you last time. You didn't fail — you learned.</p>
+      <p>It starts off great. You feel better, you're waking up early, you're reading more than ever and the scale is going down week by week. Then BOOM, your boss has a shit day and takes it out on you. Or you sleep in by accident. You celebrate too hard one weekend and can't workout. You get the flu. But surely it won't unravel again, you'll hop back on. But it does unravel, and you don't hop right back on.</p>
+      <p>You collect pages of failed habit trackers, put the weight back on, lose the strength, have more self-help books than you'd ever admit. What did this 'New Plan' get you besides a deep animosity toward your own potential.</p>
+      <p>You don't blame anyone else, you take responsibility, but that doesn't make the shame smaller. You're still angry. Still frustrated. Still on the same hamster wheel.</p>
+      <p>And the worst part? If you got that spark again — and you will — will it be the same?</p>
+      <p>The wheel doesn't stop because you try harder. You've proven that. It stops when you invest in yourself the right way. Not another program. Not another plan. A group that's in it with you — because they've been exactly where you are. You check in. You get called out. You help others do the same. Consistency stops being something you chase alone and starts being something you build together.</p>
+    </div>
+  </div>
+  <button class="pas-read-more">+ Continue reading</button>
+</section>
+
+<!-- ========== HOW IT WORKS ========== -->
+<section class="how-it-works" id="how-it-works">
+  <h2>How it works</h2>
+  <p>Simple structure. Real accountability. No fluff.</p>
+
+  <div class="hiw-items">
+  <div class="hiw-item">
+    <div class="hiw-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 8l-9-5-9 5m18 0l-9 5m9-5v8l-9 5m0-8l-9-5m9 5v8m-9-13v8l9 5"/></svg>
+    </div>
+    <h3>The Anchor Habit</h3>
+    <p>Commit to one workout every three days — at minimum. Check in daily, every other day, whenever you need to. Just don't go longer than three days without showing up. Not sure where to start? We provide pre-made workout programs for different fitness levels and equipment situations on day one — or bring your own.</p>
+  </div>
+
+  <div class="hiw-item">
+    <div class="hiw-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 8l-9-5-9 5m18 0l-9 5m9-5v8l-9 5m0-8l-9-5m9 5v8m-9-13v8l9 5"/></svg>
+    </div>
+    <h3>Your Second Commitment</h3>
+    <p>Pick one additional goal that matters to you. Diet. A personal project. Sleep. Reading. You name it, you own it, the group holds you to it.</p>
+  </div>
+
+  <div class="hiw-item">
+    <div class="hiw-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 8l-9-5-9 5m18 0l-9 5m9-5v8l-9 5m0-8l-9-5m9 5v8m-9-13v8l9 5"/></svg>
+    </div>
+    <h3>The Community</h3>
+    <p>This isn't just a check-in board. Struggling with something? Post it. You have a facilitator and up to 19 other men who've been exactly where you are. Ask for advice, share a win, or just show up. Someone will always be there.</p>
+  </div>
+
+  <div class="hiw-item">
+    <div class="hiw-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 8l-9-5-9 5m18 0l-9 5m9-5v8l-9 5m0-8l-9-5m9 5v8m-9-13v8l9 5"/></svg>
+    </div>
+    <h3>The Community Call</h3>
+    <p>Every Saturday. One hour. Facilitated. Capped at 20 men. Talk about what's working, what isn't, and what's next. Optional — but you'll show up.</p>
+  </div>
+  </div>
+</section>
+
+<!-- ========== PRICING ========== -->
+<section class="pricing" id="pricing">
+  <h2>Pricing</h2>
+
+  <div class="pricing-cards">
+  <div class="pricing-card">
+    <div class="pricing-card-header">
+      <h3>The Community</h3>
+      <div class="pricing-card-price">$200<span>/mo</span></div>
+    </div>
+    <p>Real accountability with men who get it.</p>
+    <div class="pricing-divider"></div>
+    <div class="includes-label">Includes:</div>
+    <div class="pricing-feature">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+      Private community access
+    </div>
+    <div class="pricing-feature">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+      Habit tracker
+    </div>
+    <div class="pricing-feature">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+      Pre-made workout programs
+    </div>
+    <div class="pricing-feature">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+      Facilitator-led weekly Saturday calls
+    </div>
+    <div class="pricing-feature">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+      Peer accountability
+    </div>
+    <div class="pricing-feature">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+      Capped at 20 members
+    </div>
+    <div class="pricing-feature">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+      30 day money back guarantee
+    </div>
+    <button class="btn-primary" id="communityClaimBtn">Claim Your Spot</button>
+  </div>
+
+  <div class="pricing-card">
+    <div class="pricing-card-header">
+      <h3>1:1 Private Coaching</h3>
+      <div class="pricing-card-price">$2,000</div>
+    </div>
+    <p>Private. Personalized. Built for those ready to invest seriously in themselves.</p>
+    <div class="pricing-divider"></div>
+    <div class="includes-label">Includes:</div>
+    <div class="pricing-feature">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+      1:1 weekly calls with your coach
+    </div>
+    <div class="pricing-feature">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+      24/7 private coach access
+    </div>
+    <div class="pricing-feature">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+      Personalized workout program
+    </div>
+    <div class="pricing-feature">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+      Personalized meal plan
+    </div>
+    <div class="pricing-feature">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+      Built around your life, schedule, and goals
+    </div>
+    <div class="pricing-feature">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+      Direct feedback on your check-ins
+    </div>
+    <div class="pricing-feature">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+      Accountability between every session
+    </div>
+    <div class="pricing-feature">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+      Application only — limited spots
+    </div>
+    <button class="btn-primary" id="coachingApplyBtn">Apply Now</button>
+  </div>
+  </div>
+</section>
+
+<!-- ========== FINAL CTA ========== -->
+<section class="final-cta">
+  <div class="final-cta-inner">
+    <h2>You know what happens if nothing changes. So change something. This time with people behind you.</h2>
+    <div class="final-cta-buttons">
+      <button class="btn-cta cta-trigger">Claim Your Spot</button>
+      <button class="btn-cta-secondary">Learn More</button>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FAQ ========== -->
+<section class="faq" id="faq">
+  <div class="faq-left">
+    <h2>FAQs</h2>
+    <p>Everything you need to know before you join.</p>
+    <div class="faq-still">
+      <h3>Still have questions?</h3>
+      <p>We're happy to help. Reach out directly.</p>
+      <button class="btn-secondary">Contact</button>
+    </div>
+  </div>
+  <div class="faq-right">
+  <div class="faq-item">
+    <button class="faq-question">
+      How does the check-in actually work?
+      <span class="faq-icon"></span>
+    </button>
+    <div class="faq-answer">
+      <p>You post in the private community every three days — minimum. Share your workout, your progress on your second goal, or just show up. Daily check-ins are encouraged.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      What if I miss a check-in?
+      <span class="faq-icon"></span>
+    </button>
+    <div class="faq-answer">
+      <p>Someone will notice. That's the point. The facilitator and your peers will call it out — not to shame you, but because that's what you signed up for.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      How long is the commitment — can I cancel?
+      <span class="faq-icon"></span>
+    </button>
+    <div class="faq-answer">
+      <p>Month to month. No contracts. Cancel anytime. We do ask that you give it a real shot before you decide.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      What platform is the community on?
+      <span class="faq-icon"></span>
+    </button>
+    <div class="faq-answer">
+      <p>A private community platform. Details shared on day one after you join.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      Who is the facilitator?
+      <span class="faq-icon"></span>
+    </button>
+    <div class="faq-answer">
+      <p>A real person — not a bot, not an algorithm. Details on your facilitator are shared when your cohort opens.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      Is this only about fitness or can my second goal be anything?
+      <span class="faq-icon"></span>
+    </button>
+    <div class="faq-answer">
+      <p>Fitness is the anchor habit. Your second goal is entirely yours — diet, a project, reading, sleep, whatever matters most to you right now.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      What happens after I click — when do I actually get access?
+      <span class="faq-icon"></span>
+    </button>
+    <div class="faq-answer">
+      <p>You'll be added to the waitlist and contacted personally when the next cohort opens.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      Is the 30 days truly no questions asked?
+      <span class="faq-icon"></span>
+    </button>
+    <div class="faq-answer">
+      <p>Yes. If it's not for you in the first 30 days, we'll refund you. No hoops.</p>
+    </div>
+  </div>
+
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-logo">[Name]</div>
+    <ul class="footer-links">
+      <li><a href="#why">Why?</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+
+  </div>
+  <div class="footer-divider"></div>
+  <div class="footer-bottom">
+    <ul class="footer-legal">
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      <li><a href="#">Cookies Settings</a></li>
+    </ul>
+    <p class="footer-copy">&copy; 2026 [Name]. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- ========== COACHING MODAL ========== -->
+<div class="modal-overlay" id="coachingModal">
+  <div class="modal modal-coaching">
+    <button class="modal-close" id="coachingModalClose">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <h3>Apply for Private Coaching.</h3>
+    <p>Limited spots. We read every application personally.</p>
+    <form action="https://formspree.io/f/xzdjaylw" method="POST" autocomplete="on" id="coachingForm">
+      <input type="hidden" name="_next" value="thank-you.html">
+      <div class="modal-name-row">
+        <input type="text" name="first_name" placeholder="First name" autocomplete="given-name" required>
+        <input type="text" name="last_name" placeholder="Last name" autocomplete="family-name" required>
+      </div>
+      <input type="email" name="email" placeholder="Email" autocomplete="email" required>
+      <input type="tel" name="phone" placeholder="Phone" pattern="[\+\d][\d\s\-\(\)]{6,19}" title="Enter a valid phone number" autocomplete="tel" required>
+      <input type="hidden" name="date_of_birth" id="dobCombined">
+      <div class="modal-dob-row">
+        <select id="dobDay" autocomplete="bday-day" required>
+          <option value="" disabled selected>Day</option>
+        </select>
+        <select id="dobMonth" autocomplete="bday-month" required>
+          <option value="" disabled selected>Month</option>
+          <option>January</option><option>February</option><option>March</option>
+          <option>April</option><option>May</option><option>June</option>
+          <option>July</option><option>August</option><option>September</option>
+          <option>October</option><option>November</option><option>December</option>
+        </select>
+        <select id="dobYear" autocomplete="bday-year" required>
+          <option value="" disabled selected>Year</option>
+        </select>
+      </div>
+      <input type="text" name="city" placeholder="City" autocomplete="address-level2" required>
+      <label class="modal-label">What's the biggest thing holding you back right now?</label>
+      <textarea name="holding_back" required></textarea>
+      <label class="modal-label">What have you already tried and why didn't it stick?</label>
+      <textarea name="already_tried" required></textarea>
+      <label class="modal-label">What would success look like for you in 90 days?</label>
+      <textarea name="success_90_days" required></textarea>
+      <label class="modal-label">How committed are you on a scale of 1–10, and why didn't you pick a lower number?</label>
+      <textarea name="commitment" required></textarea>
+      <button type="submit" class="btn-primary">Submit Application</button>
+    </form>
+  </div>
+</div>
+
+<!-- ========== WAITLIST MODAL ========== -->
+<div class="modal-overlay" id="waitlistModal">
+  <div class="modal">
+    <button class="modal-close" id="modalClose">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="modal-form" id="modalForm">
+      <h3>This cohort is full.</h3>
+      <p>We're intentional with who we bring in — leave your details and you're first to know when we open again.</p>
+      <form action="https://formspree.io/f/mdawlyrl" method="POST">
+        <input type="hidden" name="_next" value="thank-you.html">
+        <input type="text" name="name" placeholder="Your name" autocomplete="name" required>
+        <input type="email" name="email" placeholder="Your email" autocomplete="email" required>
+        <button type="submit" class="btn-primary">Join the Waitlist</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+  // PAS read more
+  const pasReadMore = document.querySelector('.pas-read-more');
+  const pasBodyRest = document.querySelector('.pas-body-rest');
+  const pasFade = document.querySelector('.pas-fade');
+  if (pasReadMore && pasBodyRest) {
+    pasReadMore.addEventListener('click', () => {
+      pasBodyRest.classList.add('visible');
+      pasFade.style.display = 'none';
+      pasReadMore.classList.add('hidden');
+    });
+  }
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.parentElement;
+      const wasOpen = item.classList.contains('open');
+      // Close all
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      // Toggle current
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+
+  // DOB dropdowns
+  const dobDay = document.getElementById('dobDay');
+  const dobMonth = document.getElementById('dobMonth');
+  const dobYear = document.getElementById('dobYear');
+  const dobCombined = document.getElementById('dobCombined');
+
+  for (let d = 1; d <= 31; d++) {
+    const o = document.createElement('option');
+    o.textContent = d;
+    dobDay.appendChild(o);
+  }
+  const currentYear = new Date().getFullYear();
+  for (let y = currentYear - 18; y >= 1940; y--) {
+    const o = document.createElement('option');
+    o.textContent = y;
+    dobYear.appendChild(o);
+  }
+
+  document.querySelector('#coachingModal form').addEventListener('submit', () => {
+    dobCombined.value = `${dobDay.value} ${dobMonth.value} ${dobYear.value}`;
+  });
+
+  // Coaching modal
+  const coachingModal = document.getElementById('coachingModal');
+  const coachingModalClose = document.getElementById('coachingModalClose');
+
+  document.getElementById('coachingApplyBtn').addEventListener('click', () => {
+    coachingModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  });
+
+  coachingModalClose.addEventListener('click', () => {
+    coachingModal.classList.remove('active');
+    document.body.style.overflow = '';
+  });
+
+  coachingModal.addEventListener('click', (e) => {
+    if (e.target === coachingModal) {
+      coachingModal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  });
+
+  // Waitlist modal
+  const modal = document.getElementById('waitlistModal');
+  const modalForm = document.getElementById('modalForm');
+  const modalClose = document.getElementById('modalClose');
+
+  document.querySelectorAll('.scroll-to-pricing').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  document.getElementById('communityClaimBtn').addEventListener('click', () => {
+    modal.classList.add('active');
+    modalForm.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  });
+
+  modalClose.addEventListener('click', () => {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  });
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  });
+
+  // Smooth scroll for Learn More
+  document.querySelector('.btn-secondary')?.addEventListener('click', () => {
+    document.querySelector('.for-you')?.scrollIntoView({ behavior: 'smooth' });
+  });
+
+  // Navbar: transparent over hero, pill when scrolled
+  const navbar = document.getElementById('navbar');
+  const heroSection = document.getElementById('top');
+  function updateNavbar() {
+    if (window.scrollY > 120) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  }
+  window.addEventListener('scroll', updateNavbar, { passive: true });
+  updateNavbar();
+
+  // Mobile nav drawer
+  const navHamburger = document.getElementById('navHamburger');
+  const navDrawer = document.getElementById('navDrawer');
+  const navDrawerClose = document.getElementById('navDrawerClose');
+  const navOverlay = document.getElementById('navOverlay');
+
+  function openDrawer() {
+    navDrawer.classList.add('open');
+    navOverlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeDrawer() {
+    navDrawer.classList.remove('open');
+    navOverlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  navHamburger.addEventListener('click', openDrawer);
+  navDrawerClose.addEventListener('click', closeDrawer);
+  navOverlay.addEventListener('click', closeDrawer);
+  document.querySelectorAll('.nav-drawer-link, .nav-drawer-cta').forEach(el => {
+    el.addEventListener('click', closeDrawer);
+  });
+</script>
+
+</body>
+</html>

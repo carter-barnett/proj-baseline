@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>You're on the list — Proj. Baseline</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="resources/css/styles.css">
+<style>
+  .thankyou-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    background: var(--off-white, #f9f8f5);
+  }
+  .thankyou-page h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--black, #1a1a1a);
+  }
+  .thankyou-page p {
+    font-size: 1.125rem;
+    color: var(--mid-gray, #555);
+    max-width: 480px;
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
+  }
+  .thankyou-page .sub {
+    font-size: 0.95rem;
+    color: var(--light-gray, #888);
+    margin-top: 0.5rem;
+  }
+  .thankyou-back {
+    margin-top: 2rem;
+    display: inline-block;
+    font-size: 0.95rem;
+    color: var(--mid-gray, #555);
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+  }
+  .thankyou-back:hover { color: var(--black, #1a1a1a); }
+</style>
+</head>
+<body>
+<div class="thankyou-page">
+  <h1>You're on the list.</h1>
+  <p>Most people won't make it this far. We'll reach out personally when the next cohort opens.</p>
+  <p class="sub">Keep that momentum.</p>
+  <a href="landing.html" class="thankyou-back">Back to the site</a>
+</div>
+</body>
+</html>
