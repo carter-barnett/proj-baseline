@@ -92,7 +92,7 @@ body {
   font-size: 1rem;
   font-weight: 700;
   color: var(--white);
-  font-style: italic;
+  font-style: normal;
   white-space: nowrap;
 }
 
@@ -736,7 +736,7 @@ body {
 .footer-logo {
   font-family: var(--font-display);
   font-size: 1.5rem;
-  font-style: italic;
+  font-style: normal;
   margin-bottom: 28px;
   color: var(--white);
 }
@@ -832,7 +832,7 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.25s ease, visibility 0.25s ease;
+  transition: opacity 0.15s ease, visibility 0.15s ease;
 }
 
 .modal-overlay.active {
@@ -1180,8 +1180,8 @@ body {
 
   .hiw-items {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0 48px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
     margin-top: 40px;
   }
 
@@ -1335,5 +1335,12 @@ body {
 
   .footer-copy {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1250px) {
+  .hiw-items {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 48px;
   }
 }
