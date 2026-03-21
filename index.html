@@ -570,7 +570,7 @@ src="https://www.facebook.com/tr?id=920883820652395&ev=PageView&noscript=1"
   });
 
   function closeCoachingModal() {
-    if (!coachingSubmitted) gtag('event', 'form_abandon', { event_category: 'coaching' });
+    if (!coachingSubmitted) gtag('event', 'coaching_abandon');
     coachingModal.classList.remove('active');
     document.body.style.overflow = '';
   }
@@ -603,7 +603,7 @@ src="https://www.facebook.com/tr?id=920883820652395&ev=PageView&noscript=1"
   }
 
   function closeWaitlistModal() {
-    if (!waitlistSubmitted) gtag('event', 'form_abandon', { event_category: 'waitlist' });
+    if (!waitlistSubmitted) gtag('event', 'waitlist_abandon');
     modal.classList.remove('active');
     document.body.style.overflow = '';
   }
