@@ -548,22 +548,26 @@ src="https://www.facebook.com/tr?id=920883820652395&ev=PageView&noscript=1"
   const coachingModal = document.getElementById('coachingModal');
   const coachingModalClose = document.getElementById('coachingModalClose');
 
+  let coachingSubmitted = false;
+  document.querySelector('#coachingModal form').addEventListener('submit', () => { coachingSubmitted = true; });
+
   document.getElementById('coachingApplyBtn').addEventListener('click', () => {
     coachingModal.classList.add('active');
+    coachingSubmitted = false;
     document.body.style.overflow = 'hidden';
     gtag('event', 'application_started', { event_category: 'coaching' });
   });
 
-  coachingModalClose.addEventListener('click', () => {
+  function closeCoachingModal() {
+    if (!coachingSubmitted) gtag('event', 'form_abandon', { event_category: 'coaching' });
     coachingModal.classList.remove('active');
     document.body.style.overflow = '';
-  });
+  }
+
+  coachingModalClose.addEventListener('click', closeCoachingModal);
 
   coachingModal.addEventListener('click', (e) => {
-    if (e.target === coachingModal) {
-      coachingModal.classList.remove('active');
-      document.body.style.overflow = '';
-    }
+    if (e.target === coachingModal) closeCoachingModal();
   });
 
   // Waitlist modal
@@ -577,25 +581,29 @@ src="https://www.facebook.com/tr?id=920883820652395&ev=PageView&noscript=1"
     });
   });
 
+  let waitlistSubmitted = false;
+  document.querySelector('#waitlistModal form').addEventListener('submit', () => { waitlistSubmitted = true; });
+
   function openWaitlistModal() {
     modal.classList.add('active');
     modalForm.classList.remove('hidden');
+    waitlistSubmitted = false;
     document.body.style.overflow = 'hidden';
+  }
+
+  function closeWaitlistModal() {
+    if (!waitlistSubmitted) gtag('event', 'form_abandon', { event_category: 'waitlist' });
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
   }
 
   document.getElementById('communityClaimBtn').addEventListener('click', openWaitlistModal);
   document.getElementById('ctaClaimBtn').addEventListener('click', openWaitlistModal);
 
-  modalClose.addEventListener('click', () => {
-    modal.classList.remove('active');
-    document.body.style.overflow = '';
-  });
+  modalClose.addEventListener('click', closeWaitlistModal);
 
   modal.addEventListener('click', (e) => {
-    if (e.target === modal) {
-      modal.classList.remove('active');
-      document.body.style.overflow = '';
-    }
+    if (e.target === modal) closeWaitlistModal();
   });
 
   // Smooth scroll for Learn More
