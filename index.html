@@ -9,6 +9,14 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="stylesheet" href="resources/css/styles.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M9TCWKXNFJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-M9TCWKXNFJ');
+</script>
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -543,6 +551,7 @@ src="https://www.facebook.com/tr?id=920883820652395&ev=PageView&noscript=1"
   document.getElementById('coachingApplyBtn').addEventListener('click', () => {
     coachingModal.classList.add('active');
     document.body.style.overflow = 'hidden';
+    gtag('event', 'application_started', { event_category: 'coaching' });
   });
 
   coachingModalClose.addEventListener('click', () => {
