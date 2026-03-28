@@ -82,17 +82,19 @@ src="https://www.facebook.com/tr?id=920883820652395&ev=PageView&noscript=1"
 <!-- ========== HERO ========== -->
 <section class="hero" id="top">
   <div class="hero-content">
-    <h1>Your goals don't need a better plan.<br>They need a witness.</h1>
-    <p>Not a course. Not a challenge. A group who actually shows up, and expects you to.</p>
+    <h1>You don't have a discipline problem.<br>You have an isolation problem.</h1>
+    <p>You don't need another app or program. You need a small group of men who actually show up — and notice when you don't.</p>
     <div class="hero-buttons">
-      <button class="btn-primary scroll-to-pricing">Claim Your Spot</button>
-      <button class="btn-secondary">Learn More</button>
+      <button class="btn-primary scroll-to-for-you">See How It Works</button>
     </div>
   </div>
 </section>
 
+<!-- ========== TRANSITIONAL LINE ========== -->
+<div class="hero-transition">Sound familiar? You're not alone. Here's what we built for men like you.</div>
+
 <!-- ========== THIS IS FOR YOU IF ========== -->
-<section class="for-you">
+<section class="for-you" id="for-you">
   <div class="for-you-left">
     <h2>Good Pacing is for you if...</h2>
     <button class="btn-primary scroll-to-pricing">Claim Your Spot</button>
@@ -589,6 +591,12 @@ src="https://www.facebook.com/tr?id=920883820652395&ev=PageView&noscript=1"
   document.querySelectorAll('.scroll-to-pricing').forEach(btn => {
     btn.addEventListener('click', () => {
       document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  document.querySelectorAll('.scroll-to-for-you').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.getElementById('for-you').scrollIntoView({ behavior: 'smooth' });
     });
   });
 
