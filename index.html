@@ -62,7 +62,7 @@ src="https://www.facebook.com/tr?id=920883820652395&ev=PageView&noscript=1"
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 80px 16px 48px;
+    padding: 120px 16px 48px;
     background:
       linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.92) 100%),
       url('resources/images/hero-mobile.jpg') center/cover no-repeat;
@@ -83,6 +83,8 @@ src="https://www.facebook.com/tr?id=920883820652395&ev=PageView&noscript=1"
     max-width: 750px;
     width: 100%;
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
   }
 
   .hero h1 {
@@ -105,6 +107,9 @@ src="https://www.facebook.com/tr?id=920883820652395&ev=PageView&noscript=1"
     color: #fff;
     line-height: 1.4;
     margin-bottom: 36px;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   /* ── EMAIL FORM ── */
@@ -112,8 +117,11 @@ src="https://www.facebook.com/tr?id=920883820652395&ev=PageView&noscript=1"
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 100%;
     max-width: 380px;
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
   }
 
   .email-form input[type="email"] {
@@ -254,16 +262,16 @@ src="https://www.facebook.com/tr?id=920883820652395&ev=PageView&noscript=1"
 <!-- ========== HERO ========== -->
 <section class="hero">
   <div class="hero-content">
-    <h1>You don't have a discipline problem.<br>You have an isolation problem.</h1>
-    <h2>Stop starting over. Join an accountability group that pushes you to grow.</h2>
+    <h1>Stop Growing Alone.</h1>
+    <h2>Join an accountability group that actually keeps you on track.</h2>
     <form class="email-form" action="https://api.web3forms.com/submit" method="POST">
       <input type="hidden" name="access_key" value="a3724c7a-2ac0-4465-bc12-401c8fb7e119">
       <input type="hidden" name="redirect" value="https://www.goodpacing.com/thank-you.html">
       <input type="hidden" name="subject" value="New Waitlist Signup">
       <input type="email" name="email" placeholder="Enter your email" autocomplete="email" required>
-      <button type="submit">Waitlist's Open - Groups Capped at 20</button>
+      <button type="submit">Join a Group Waitlist</button>
+      <p class="form-note">Building the next group now. Groups capped at 20.</p>
     </form>
-    <p class="form-note">Our groups are all full. No spam. We'll reach out personally.</p>
   </div>
 </section>
 
